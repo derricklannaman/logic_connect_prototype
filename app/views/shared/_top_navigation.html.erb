@@ -1,0 +1,22 @@
+<nav class="top-level">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          LogicConnect
+        </a>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <%= link_to "Measures", measures_path, class: "navbar-brand" %>
+        <%= link_to "Packages", packages_path, class: "navbar-brand" %>
+        <%= link_to "Code List", code_list_path, class: "navbar-brand" %>
+        <%= link_to "Reports", reports_path, class: "navbar-brand" %>
+        <%= link_to "Jobs", jobs_path, class: "navbar-brand" %>
+      </div>
+    </div>
+  </nav>
+</nav>

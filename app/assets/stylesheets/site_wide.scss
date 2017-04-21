@@ -1,0 +1,21 @@
+body {
+  min-width: 800px;
+}
+
+
+.main-view {
+  border: 1px solid red;
+  height: calc(100vh - 102px);
+  margin-left: 250px;
+}
+
+nav.top-level {
+  margin-left: 250px;
+}
+
+.side_panel-navigation {
+  border: 1px solid red;
+  width: 250px;
+  height: 100vh;
+  position: absolute;
+}
