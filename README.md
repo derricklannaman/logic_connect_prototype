@@ -21,4 +21,4 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* http://demo.naksoid.com/elephant-v1.2.0/theme-3/dashboard-1.html
