@@ -1,5 +1,8 @@
-<ul>
+<div id="accordion">
   <% @side_panel_list.each do |name| %>
-    <li><%= name %></li>
+    <h3><%= name %></h3>
+    <%= form_tag("/create", method: "post") do %>
+      <%= text_field_tag(:code_list_name) %>
+    <% end %>
   <% end %>
-</ul>
+</div>

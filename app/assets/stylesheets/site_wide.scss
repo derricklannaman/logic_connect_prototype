@@ -2,6 +2,7 @@ body {
   min-width: 800px;
 }
 
+/**** MAIN CONTENT PANEL ****/
 
 .main-view {
   border: 1px solid red;
@@ -9,13 +10,30 @@ body {
   margin-left: 250px;
 }
 
+/**** NAVIGATION ****/
+
+
+/* Top Navigation */
+
 nav.top-level {
   margin-left: 250px;
 }
+
+/* Side Navigation Panel */
 
 .side_panel-navigation {
   border: 1px solid red;
   width: 250px;
   height: 100vh;
   position: absolute;
+  .menu-content {
+    border: 1px solid;
+    padding: 0px;
+  }
+}
+
+.side-panel-list-item {
+  padding: 5px;
+  border: 1px solid;
+  font-size: 22px;
 }
