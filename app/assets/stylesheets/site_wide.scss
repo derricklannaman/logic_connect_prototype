@@ -3,37 +3,87 @@ body {
 }
 
 /**** MAIN CONTENT PANEL ****/
-
 .main-view {
-  border: 1px solid red;
   height: calc(100vh - 102px);
   margin-left: 250px;
+  background-color: rgba(242,245,248,0.5);
+  padding: 20px;
 }
 
 /**** NAVIGATION ****/
 
-
 /* Top Navigation */
-
 nav.top-level {
   margin-left: 250px;
+  .organization-bar {
+    background-color: rgba(44,62,80,0.4);
+    border-bottom: 1px solid #FFF;
+  }
+  .menu-action-bar {
+    background-color: rgba(44,62,80,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+}
+
+.platform-logo {
+  background-color: rgba(44,62,80,1);
+  .logo-name-container {
+    float: right;
+    margin-top: 30px;
+    margin-right: 10px;
+  }
+  /* LogicConnect */
+  p {
+    color: rgba(123,153,183,1);
+    font-size: 20px;
+    margin-bottom: -5px;
+  }
+  /* Health Analytics */
+  .logo-tagline {
+    color: rgba(123,153,183,1);
+    margin-left: 17px;
+  }
+}
+
+.organization-brand {
+  text-align: center;
+  font-size: 25px;
+  padding: 6px;
+  color: rgba(44,62,80,0.7);
+  letter-spacing: 1px;
 }
 
 /* Side Navigation Panel */
-
 .side_panel-navigation {
-  border: 1px solid red;
   width: 250px;
   height: 100vh;
   position: absolute;
-  .menu-content {
-    border: 1px solid;
-    padding: 0px;
-  }
+  background-color: rgba(50,71,92, 1);
+  color: rgba(255,255,255, 0.6);
+}
+
+.menu-content-container {
+  display: none;
+  background-color: rgba(171,178,185,0.4);
+}
+
+.content-title {
+  border-bottom: 1px solid rgba(171,178,185,0.4);
+  padding: 15px;
+  cursor: pointer;
 }
 
 .side-panel-list-item {
   padding: 5px;
   border: 1px solid;
   font-size: 22px;
+}
+
+.content-title-highlighter {
+  background-color: rgba(44,62,80,1);
+  border-right: 5px solid rgba(123,153,183,1);
+}
+
+form.menu-list-input {
+  height: 55px;
 }

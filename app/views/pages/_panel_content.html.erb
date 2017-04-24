@@ -1,8 +1,17 @@
-<div id="accordion">
+<div class="menu-item-component">
   <% @side_panel_list.each do |name| %>
-    <h3><%= name %></h3>
-    <%= form_tag("/create", method: "post") do %>
-      <%= text_field_tag(:code_list_name) %>
-    <% end %>
+    <div class="content-title"><%= name %></div>
+    <div class="menu-content-container">
+      <div class="content-form">
+        <%= form_tag("/create", class: "menu-list-input", method: "post") do %>
+          <%= text_field_tag(:code_list_name) %>
+        <% end %>
+      </div>
+      <div class="content-list">
+        <li>hello</li>
+        <li>hello1</li>
+        <li>hello2</li>
+      </div>
+    </div>
   <% end %>
 </div>
