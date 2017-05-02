@@ -23,6 +23,10 @@ nav.top-level {
     background-color: rgba(44,62,80,0.1);
     border-bottom: 1px solid rgba(0,0,0,0.05);
   }
+  .codelist-action-bar {
+    background-color: rgba(44, 62, 80, 0.05);
+    border-bottom: 1px solid #FFF;
+  }
 }
 
 .platform-logo {
@@ -30,13 +34,13 @@ nav.top-level {
   .logo-name-container {
     float: right;
     margin-top: 30px;
-    margin-right: 10px;
+    margin-right: 20px;
   }
   /* LogicConnect */
   p {
     color: rgba(123,153,183,1);
     font-size: 20px;
-    margin-bottom: -5px;
+    margin-bottom: 1px;
   }
   /* Health Analytics */
   .logo-tagline {
@@ -59,7 +63,7 @@ nav.top-level {
   height: 100vh;
   position: absolute;
   background-color: rgba(50,71,92, 1);
-  color: rgba(255,255,255, 0.6);
+  /*color: rgba(255,255,255, 0.6);*/
 }
 
 .menu-content-container {
@@ -71,6 +75,7 @@ nav.top-level {
   border-bottom: 1px solid rgba(171,178,185,0.4);
   padding: 15px;
   cursor: pointer;
+  color: rgba(255,255,255, 0.6);
 }
 
 .side-panel-list-item {
@@ -86,4 +91,41 @@ nav.top-level {
 
 form.menu-list-input {
   height: 55px;
+}
+
+/**** SEARCH ****/
+input#q {
+  width: 100%;
+  height: 40px;
+  font-size: 17px;
+  text-align: center;
+  border: none;
+  border-top: 1px solid rgba(0,0,0, 0.1);
+  border-bottom: 1px solid rgba(0,0,0, 0.1);
+  background-color: rgba(123,153,183,0.2);
+}
+
+button.search-btn {
+  height: 39px;
+  width: 40px;
+  background-color: rgba(44, 62, 80, 0.4);
+  position: relative;
+  left: 0px;
+  float: right;
+  margin-top: -39px;
+  border: none;
+  z-index: 1;
+  &:hover {
+    transition: 0.3s;
+    background-color: lightsteelblue;
+    color: #FFF;
+
+  }
+}
+
+.new-code-list-pane {
+  border-bottom: 1px solid rgba(0,0,0, 0.1);
+  padding: 15px;
+  margin-top: -30px;
+  margin-bottom: 30px;
 }

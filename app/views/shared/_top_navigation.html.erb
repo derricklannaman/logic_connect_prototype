@@ -13,10 +13,46 @@
       <div class="navbar-header">
         <%= link_to "Measures", measures_path, class: "navbar-brand" %>
         <%= link_to "Packages", packages_path, class: "navbar-brand" %>
-        <%= link_to "Code List", code_list_path, class: "navbar-brand" %>
+        <%= link_to "Code List", code_lists_path, class: "navbar-brand" %>
         <%= link_to "Reports", reports_path, class: "navbar-brand" %>
         <%= link_to "Jobs", jobs_path, class: "navbar-brand" %>
       </div>
     </div>
   </nav>
+
+  <!-- Third Level INDEX Page Action Bar -->
+  <% if controller_name == "code_lists" && action_name == "index" %>
+    <nav class="navbar-default codelist-action-bar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div data-turbolinks="false">
+            <%= link_to "Create CodeList", "#", class: "navbar-brand new-code-list"%>
+          </div>
+        </div>
+      </div>
+    </nav>
+  <% end %>
+
+  <!-- Third Level SHOW Page Action Bar -->
+  <% if controller_name == "code_lists" && action_name == "show" %>
+    <nav class="navbar-default codelist-action-bar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div class='navbar-brand new-code-list'><strong>Name:</strong> <%= @code_list.name %></div>
+        </div>
+        <div class="navbar-header">
+          <div class='navbar-brand new-code-list'><strong>System:</strong> <%= @code_list.code_system %></div>
+        </div>
+        <div class="navbar-header">
+          <div class='navbar-brand new-code-list'><strong>Code Count:</strong> <%= @current_list_codes.count %></div>
+        </div>
+        <div class="navbar-header pull-right nav-action-button">
+          <div data-turbolinks="false">
+            <%= link_to "Edit CodeList", "#", class: "navbar-brand new-code-list"%>
+          </div>
+        </div>
+      </div>
+    </nav>
+  <% end %>
+
 </nav>

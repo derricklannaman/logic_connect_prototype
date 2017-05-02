@@ -1,17 +1,20 @@
-<div class="menu-item-component">
-  <% @side_panel_list.each do |name| %>
-    <div class="content-title"><%= name %></div>
+<!-- <div class="menu-item-component">
+  <%# @code_system_type.each do |name| %>
+    <div class="content-title"><%#= name %></div>
     <div class="menu-content-container">
       <div class="content-form">
-        <%= form_tag("/create", class: "menu-list-input", method: "post") do %>
-          <%= text_field_tag(:code_list_name) %>
-        <% end %>
-      </div>
+   -->      <%#= form_tag(code_lists_path, class: "menu-list-input", method: "post") do %>
+          <%#= text_field_tag :name, nil, placeholder: "Type new Codelist here" %>
+          <%#= hidden_field_tag :code_system, name %>
+          <!-- hidden_field_tag 'token', 'VUBJKB23UIVI1UU1VOBVI@' -->
+        <%# end %>
+<!--       </div>
       <div class="content-list">
         <li>hello</li>
         <li>hello1</li>
         <li>hello2</li>
       </div>
     </div>
-  <% end %>
+  <%# end %>
 </div>
+ -->
