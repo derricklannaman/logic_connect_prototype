@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get "jobs", to: "pages#jobs"
 
   post "gather_codes", to: "code_lists#gather_codes"
+  post "submit_code_list", to: "code_lists#submit_code_list"
   delete "remove_codes", to: "code_lists#remove_codes"
 
   resources :code_lists do

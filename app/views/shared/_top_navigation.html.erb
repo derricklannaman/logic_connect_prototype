@@ -11,11 +11,11 @@
   <nav class="navbar-default menu-action-bar">
     <div class="container-fluid">
       <div class="navbar-header">
-        <%= link_to "Measures", measures_path, class: "navbar-brand" %>
-        <%= link_to "Packages", packages_path, class: "navbar-brand" %>
-        <%= link_to "Code List", code_lists_path, class: "navbar-brand" %>
-        <%= link_to "Reports", reports_path, class: "navbar-brand" %>
-        <%= link_to "Jobs", jobs_path, class: "navbar-brand" %>
+        <%= link_to "Measures", measures_path, class: "navbar-brand-link ui button", "data-tooltip"=> "Create a new Measure", "data-position"=> "top center" %>
+        <%= link_to "Packages", packages_path, class: "navbar-brand-link ui button", "data-tooltip"=> "Find and view a Package", "data-position"=> "top center" %>
+        <%= link_to "Code List", code_lists_path, class: "navbar-brand-link ui button", "data-tooltip"=> "Create a new Code List", "data-position"=> "top center" %>
+        <%= link_to "Reports", reports_path, class: "navbar-brand-link ui button", "data-tooltip"=> "View Reports", "data-position"=> "top center" %>
+        <%= link_to "Jobs", jobs_path, class: "navbar-brand-link ui button", "data-tooltip"=> "Find and View Job Status", "data-position"=> "top center" %>
       </div>
     </div>
   </nav>
@@ -24,7 +24,7 @@
   <% if controller_name == "code_lists" && action_name == "index" %>
     <nav class="navbar-default codelist-action-bar">
       <div class="container-fluid">
-        <div class="navbar-header">
+        <div class="navbar-header nav-action-button">
           <div data-turbolinks="false">
             <%= link_to "Create CodeList", "#", class: "navbar-brand new-code-list"%>
           </div>

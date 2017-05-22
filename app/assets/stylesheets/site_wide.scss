@@ -29,6 +29,19 @@ nav.top-level {
   }
 }
 
+.navbar-brand-link {
+  float: left !important;
+  height: 50px !important;
+  padding: 15px 15px !important;
+  font-size: 18px !important;
+  line-height: 20px !important;
+}
+
+.ui.button {
+  background: none !important;
+  font-weight: normal !important;
+}
+
 .platform-logo {
   background-color: rgba(44,62,80,1);
   .logo-name-container {
@@ -108,7 +121,8 @@ input#q {
 button.search-btn {
   height: 39px;
   width: 40px;
-  background-color: rgba(44, 62, 80, 0.4);
+  background-color: #7b99b7;
+  color: rgba(255, 255, 255, 0.6);;
   position: relative;
   left: 0px;
   float: right;
@@ -116,10 +130,7 @@ button.search-btn {
   border: none;
   z-index: 1;
   &:hover {
-    transition: 0.3s;
-    background-color: lightsteelblue;
     color: #FFF;
-
   }
 }
 
