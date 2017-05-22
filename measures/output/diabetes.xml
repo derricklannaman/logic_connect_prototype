@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<code_lists>
+  <code>
+    <name>A032</name>
+    <code_system>icd10</code_system>
+    <info>Shigellosis due to Shigella boydii</info>
+    <description>ICD-10-CM Diagnosis Code</description>
+  </code>
+  <code>
+    <name>L89814</name>
+    <code_system>icd10</code_system>
+    <info>Pressure ulcer of head, stage 4</info>
+    <description>ICD-10-CM Diagnosis Code</description>
+  </code>
+  <code>
+    <name>M79674</name>
+    <code_system>icd10</code_system>
+    <info>Pain in right toe(s)</info>
+    <description>ICD-10-CM Diagnosis Code</description>
+  </code>
+</code_lists>

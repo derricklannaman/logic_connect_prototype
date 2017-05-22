@@ -1,0 +1,35 @@
+<header class="table-info-block search-widget">
+  <div class="title">
+    Code Search
+  </div>
+  <div class="search">
+    <%= form_tag code_list_path(@code_list), method: :get do %>
+      <%= text_field_tag :q, nil, placeholder: "Enter search word, phrase or code here..." %>
+
+      <%= button_tag(type: 'submit', class: "search-btn") do %>
+        <span><i class="fa fa-search" aria-hidden="true"></i></span>
+      <% end %>
+    <% end %>
+  </div>
+    <div class="search-result-container">
+      <div class="row">
+        <div class="col-md-5">
+          <header class="table-info-block">
+            <% if @code.present? %>
+              <div class="title">
+                <span class="btn btn-lg btn-success code-search-result"><%= @code.code %></span>
+                <%#= @code.description %>
+              </div>
+              <div class="table-legend">
+                <%= @code.info %>
+                <div class="code-system-search-result">
+                  <%= @code.description %>
+                </div>
+              </div>
+            <% end %>
+          </header>
+        </div>
+      </div>
+    </div>
+    <%= button_tag 'Add to code list', class: "code-submit-btn", id: "search-result-submit-button" %>
+</header>

@@ -1,0 +1,24 @@
+<div class="col-md-5 code-builder">
+  <div class="code-table-header">
+    <span><%= "#{@code_list.name.titleize} Code List Builder" %></span>
+  </div>
+  <div class="table-wrapper">
+    <table class="table table-hover table-container">
+      <thead>
+      </thead>
+      <tbody class="table-scrollable">
+        <% if @current_list_codes.present? %>
+          <% @current_list_codes.each do |list_item| %>
+            <tr class="table-row-hook">
+              <td><%= list_item.code %></td>
+              <td><%= list_item.code_system %></td>
+              <td><%= list_item.info %></td>
+              <td><%= link_to 'Remove', remove_codes_path(item_id: list_item, id: @code_list.id), method: :delete %></td>
+            </tr>
+          <% end %>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <%= button_to "Submit Code List", submit_code_list_path(id:@code_list.id), class: 'code-list-submit-btn'%>
+</div>

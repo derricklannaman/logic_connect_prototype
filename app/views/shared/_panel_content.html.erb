@@ -1,0 +1,19 @@
+<div class="menu-item-component">
+  <% if @code_system_type.present? %>
+    <% @code_system_type.each do |name| %>
+      <div class="content-title"><%= name %></div>
+      <div class="menu-content-container">
+
+        <div class="content-list">
+          <% if @lists.present? %>
+            <ul>
+              <% @lists.each do |list| %>
+                <li class="side-menu-list-item"><%= link_to list.name, list, class: "side-menu-list-name" %></li>
+              <% end %>
+            </ul>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>

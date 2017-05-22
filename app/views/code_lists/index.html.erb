@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<div>
+  <div class="new-code-list-pane">
+    <%= render partial: "shared/new_code_list" %>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="table-wrapper data-panel">
+        <h1 class="info">
+          <div>Active CodeList</div>
+          <div><%= @code_list.count %></div>
+        </h1>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="table-wrapper data-panel">
+        <h1 class="info">Data Here</h1>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="table-wrapper data-panel">
+        <h1 class="info">Data Here</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+

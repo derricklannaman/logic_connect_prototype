@@ -1,0 +1,22 @@
+<div class="col-md-5 code-panel">
+  <div class="code-table-header">
+    <span>Code</span>
+    <span>Description</span>
+  </div>
+  <div class="table-wrapper">
+    <table class="table table-hover table-container">
+      <thead>
+      </thead>
+      <tbody class="table-scrollable">
+        <% @icd10cm.each do |code| %>
+          <tr>
+            <td class="code-check-box"><%= check_box_tag code.code %></td>
+            <td><%= code.code %></td>
+            <td><%= code.info %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <%= button_tag 'Add to code list', class: "code-submit-btn" %>
+</div>

@@ -1,0 +1,24 @@
+<%= form_for(@new_code_list) do |f| %>
+  <% if @new_code_list.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@new_code_list.errors.count, "error") %> prohibited this code_list from being saved:</h2>
+      <ul>
+      <% @new_code_list.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :code_system %>
+    <%= f.select(:code_system, @code_system_type) %>
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+
+    <span class="actions">
+      <%= f.submit class: "create-codelist-btn" %>
+    </span>
+<% end %>
